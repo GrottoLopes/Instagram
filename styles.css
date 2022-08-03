@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body{
+    width: 100%;
+    background-color: rgb(243, 243, 243);
+    min-height: 100vh;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+
+
+.container{
+    display: flex;
+    justify-content: start;
+    align-items: center; /* ALINHAMENTO VERTICAL */
+    width: 90%;
+    height: 100vh;
+}
+
+.celular{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+.celular img{
+    width: 50rem;
+}
+
+.entrar{
+    display: flex;
+    align-items: center; /* HORIZONTAL */
+    justify-content: space-between; /* VERTICAL */
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+}
+
+.login{
+    border: 1px solid lightgray;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.3rem 0;
+    margin-bottom: 5px;
+}
+
+.login:nth-child(1){
+    min-height: 19rem;
+}
+
+.logo-instagram{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.instagram-logo{
+    height: 3rem;
+}
+
+.foto-perfil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.foto-perfil img{
+    height: 6rem;
+}
+
+.instagram-login{
+    background-color: #0095f6;
+    padding: 8px;
+    color: white;
+    border-radius: 4px;
+}
+
+.instagram-logout{
+    color: #0095f6;
+    margin-top: 1rem;
+}
+
+.baixe-app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    padding: 1.3rem 0;
+}
+
+.shopbtm{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.app-download{
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+
+.app-download:nth-child(1){
+    background-image: url('/Imagens/apple-button.png');
+}
+
+.app-download:nth-child(2){
+    background-image: url('/Imagens/googleplay-button.png');
+}
+
+.nao-conta{
+    color: rgb(160, 160, 160);
+}
+
+.link{
+    color: #0095f6;
+}
+
+@media (max-width: 1024px){
+    .container{
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px){
+    .container{
+        background-color: #ffffff;
+    }
+
+    .celular{
+        display: none;
+    }
+
+    .entrar{
+        width: 100%;
+    }
+
+    .login{
+        border: 1px solid transparent;
+    }
+}
